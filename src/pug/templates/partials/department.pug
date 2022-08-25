@@ -1,0 +1,30 @@
+.department__title Управление координации и контроля реализации проектной деятельности
+  .department__head
+    .department__avatar
+      a(href="#")
+        img(src="assets/images/avatar-user.jpg")
+    div
+      .department__head-text Андрей Соловец
+      .department__head-position Начальник отдела
+  .department__employees
+    .department__employees-avatars
+      .department__avatar
+        a(href="#")
+          img(src="assets/images/avatar-user.jpg")
+      .department__avatar
+        a(href="#")
+          img(src="assets/images/avatar-user.jpg")
+    div(style="position: relative;")
+      a.department__employees-count.structure-more-employee(href="javascript:void(0)", data-role="department_employee_count") 18 сотрудников
+      include employees-popup
+
+.department__show-depts
+.department__depts-popup
+  .department__dept
+    include dept.pug
+  .department__dept
+    include dept.pug
+  .department__dept
+    include dept.pug
+  .department__dept
+    include dept.pug

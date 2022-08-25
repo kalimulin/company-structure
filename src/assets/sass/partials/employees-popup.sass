@@ -1,0 +1,75 @@
+.employess-popup
+  display: none
+  position: absolute
+  left: 0
+  top: calc(100% + 10px)
+  z-index: 2000
+  background-color: #fff
+  box-shadow: 0 7px 21px rgba(83, 92, 105, .12), 0 -1px 6px 0 rgba(83, 92, 105, .06)
+  padding: 10px
+  font-size: 13px
+  box-sizing: border-box
+  flex-direction: column
+  justify-content: stretch
+
+  &_active
+    display: flex
+
+  &__content
+    box-sizing: border-box
+    background-color: #fff
+    position: relative
+    height: 250px
+    width: 230px
+    overflow-x: auto
+    overflow-y: auto
+
+  &__employee
+    display: flex
+    padding: 8px
+    text-align: left
+
+  &__employee_head
+    border-bottom: solid 1px #DADADA
+
+  &__head-text
+    font-size: 11px
+    line-height: 12px
+    color: #2067B0
+    &:hover
+      text-decoration: underline
+
+  &__head-position
+    font-size: 9px
+    line-height: 9px
+    color: #717A84
+    margin-top: 4px
+
+  &__avatar
+    width: 22px
+    height: 22px
+    border-radius: 50%
+    margin-right: 8px
+    flex-shrink: 0
+
+  &__angly
+    left: 40px
+    margin-left: 0
+    display: block
+    top: -22px
+    height: 22px
+    position: absolute
+    width: 33px
+    overflow: hidden
+    z-index: 2001
+    &:before
+      background-color: #ffffff
+      box-shadow: 0 0 21px rgba(83, 92, 105, .13)
+      content: ''
+      height: 15px
+      position: absolute
+      left: 9px
+      top: 16px
+      transform: rotate(45deg)
+      transform-origin: 50% 50%
+      width: 15px

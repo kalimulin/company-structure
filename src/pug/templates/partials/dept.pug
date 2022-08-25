@@ -1,0 +1,21 @@
+.dept
+  .dept__title Отдел реализации проекта "Электронный дом"
+  .dept__head
+    .dept__avatar
+      a(href="#")
+        img(src="assets/images/avatar-user.jpg")
+    div
+      .dept__head-text Андрей Соловец
+      .dept__head-position Начальник отдела
+  .dept__employees
+    .dept__employees-avatars
+      .dept__avatar
+        a(href="#")
+          img(src="assets/images/avatar-user.jpg")
+      .dept__avatar
+        a(href="#")
+          img(src="assets/images/avatar-user.jpg")
+    div(style="position: relative;")
+      a.dept__employees-count.structure-more-employee(href="#") 8 сотрудников
+      include employees-popup
+

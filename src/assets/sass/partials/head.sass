@@ -1,0 +1,182 @@
+.head
+  width: 168px
+  display: flex
+  flex-direction: column
+  padding: 0 28px
+  box-sizing: content-box
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    left: 50%
+    top: -36px
+    height: 36px
+    width: 1px
+    border-left: 1px solid #0084C6
+  &:before
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    top: -36px
+    width: 100%
+    height: 35px
+    border-top: 1px solid #0084C6
+  &:first-child
+    &:after
+      display: none
+    &:before
+      border-radius: 8px 0 0 0
+      left: 50%
+      border-left: 1px solid #0084C6
+  &:last-child
+    &:after
+      display: none
+    &:before
+      border-radius: 0 8px 0 0
+      left: auto
+      right: 50%
+      border-right: 1px solid #0084C6
+  &__photo
+    text-align: center
+    height: 70px
+    width: 100%
+    overflow: hidden
+    img
+      width: 82px
+      height: 82px
+      margin: 0 auto
+      border-radius: 50%
+  &__info
+    text-align: center
+  &__bio
+    padding: 8px
+    background-color: #EEF2F4
+    height: 74px
+    border-radius: 4px
+    box-shadow: -3px 0px 0px #5C6575
+    position: relative
+    &:before
+      display: none
+
+  &__department
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      top: -36px
+      left: -12px
+      width: 8px
+      height: 55px
+      border-left: 1px solid #5C6575
+      border-top: 1px solid #5C6575
+      border-radius: 8px 0 0 0
+
+  &__name
+    font-size: 16px
+    line-height: 22px
+    font-family: 'Open Sans Condensed', sans-serif
+  &__position
+    font-size: 12px
+    line-height: 16px
+    color: #717A84
+    margin-top: 4px
+
+  .department
+    &:before
+      content: ""
+      position: absolute
+      left: -12px
+      height: calc(100% + 8px)
+      width: 1px
+      top: -4px
+      border-left: 1px solid #5C6575
+    &:after
+      content: ""
+      position: absolute
+      left: -12px
+      width: 12px
+      height: 1px
+      top: 50%
+      border-top: 1px solid #5C6575
+    &:last-child
+      &:after
+        display: none
+      &:before
+        border-bottom: 1px solid #5C6575
+        height: 50%
+        width: 12px
+        border-radius: 0 0 0 8px
+
+  &.head_blue
+    .head__bio
+      box-shadow: -3px 0px 0px #00B4F9
+    .head__bio:before
+      border-color: #0084c6
+    .head__department:before
+      border-color: #0084c6
+    .department:before
+      border-color: #0084c6
+    .department:after
+      border-color: #0084c6
+
+  &.head_darkgreen
+    .head__bio
+      box-shadow: -3px 0px 0px #1B806D
+    .head__bio:before
+      border-color: #1B806D
+    .head__department:before
+      border-color: #1B806D
+    .department:before
+      border-color: #1B806D
+    .department:after
+      border-color: #1B806D
+
+  &.head_red
+    .head__bio
+      box-shadow: -3px 0px 0px #CE0058
+    .head__bio:before
+      border-color: #CE0058
+    .head__department:before
+      border-color: #CE0058
+    .department:before
+      border-color: #CE0058
+    .department:after
+      border-color: #CE0058
+
+  &.head_lightgreen
+    .head__bio
+      box-shadow: -3px 0px 0px #6BCABA
+    .head__bio:before
+      border-color: #6BCABA
+    .head__department:before
+      border-color: #6BCABA
+    .department:before
+      border-color: #6BCABA
+    .department:after
+      border-color: #6BCABA
+
+  &.head_orange
+    .head__bio
+      box-shadow: -3px 0px 0px #FF6900
+    .head__bio:before
+      border-color: #FF6900
+    .head__department:before
+      border-color: #FF6900
+    .department:before
+      border-color: #FF6900
+    .department:after
+      border-color: #FF6900
+
+
+  &.head_violet
+    .head__bio
+      box-shadow: -3px 0px 0px #AC4FC6
+    .head__bio:before
+      border-color: #AC4FC6
+    .head__department:before
+      border-color: #AC4FC6
+    .department:before
+      border-color: #AC4FC6
+    .department:after
+      border-color: #AC4FC6

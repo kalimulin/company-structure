@@ -1,0 +1,43 @@
+.top-head
+  width: 168px
+  display: flex
+  flex-direction: column
+  box-sizing: content-box
+  position: relative
+  box-shadow: 0 3px 0 #5C6575
+  border-radius: 4px
+  &:after
+    content: ""
+    position: absolute
+    left: 50%
+    top: 100%
+    height: 36px
+    width: 1px
+    border-left: 1px solid #0084C6
+  &__photo
+    text-align: center
+    height: 100px
+    width: 100%
+    overflow: visible
+    img
+      width: 112px
+      height: 112px
+      margin: 0 auto
+      border-radius: 50%
+
+  &__info
+    text-align: center
+  &__bio
+    padding: 8px 4px
+    background-color: #EEF2F4
+    border-radius: 4px
+  &__name
+    font-size: 16px
+    line-height: 22px
+    margin-top: 8px
+    font-family: 'Open Sans Condensed', sans-serif
+  &__position
+    font-size: 12px
+    line-height: 16px
+    color: #717A84
+
